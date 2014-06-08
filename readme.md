@@ -67,7 +67,8 @@ Example
 
 ## Related
 
-- [os-name](https://github.com/sindresorhus/os-name) - Get the name of the current operating system. Example: OS X Mavericks
+- [os-name](https://github.com/sindresorhus/os-name) - Get the name of the current operating system. Example: `OS X Mavericks`
+- [osx-version](https://github.com/sindresorhus/osx-version) - Get the OS X version of the current system. Example: `10.9.3`
 
 
 ## License
