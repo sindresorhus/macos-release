@@ -4,13 +4,13 @@
   "description": "Get the name and version of a OS X release from the Darwin version. Example: 13.2.0 → {name: 'Mavericks', version: '10.9'}",
   "license": "MIT",
   "repository": "sindresorhus/osx-release",
-  "bin": {
-    "osx-release": "cli.js"
-  },
   "author": {
     "name": "Sindre Sorhus",
     "email": "sindresorhus@gmail.com",
     "url": "http://sindresorhus.com"
+  },
+  "bin": {
+    "osx-release": "cli.js"
   },
   "engines": {
     "node": ">=0.10.0"
@@ -37,7 +37,7 @@
     "version"
   ],
   "dependencies": {
-    "minimist": "^0.1.0"
+    "minimist": "^1.1.0"
   },
   "devDependencies": {
     "mocha": "*"

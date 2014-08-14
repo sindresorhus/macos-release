@@ -54,14 +54,15 @@ $ npm install --global osx-release
 ```sh
 $ osx-release --help
 
-Usage
-  $ osx-release [release]
+  Usage
+    osx-release [release]
 
-Example
-  $ osx-release
-  Mavericks 10.9
-  $ osx-release 14.0.0
-  Yosemite 10.10
+  Example
+    osx-release
+    Mavericks 10.9
+
+    osx-release 14.0.0
+    Yosemite 10.10
 ```
 
 
