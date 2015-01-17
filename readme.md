@@ -36,7 +36,7 @@ osxRelease('14.0.0');
 
 ## API
 
-### osRelease([release])
+### osxRelease([release])
 
 #### release
 
@@ -70,6 +70,7 @@ $ osx-release --help
 
 - [os-name](https://github.com/sindresorhus/os-name) - Get the name of the current operating system. Example: `OS X Mavericks`
 - [osx-version](https://github.com/sindresorhus/osx-version) - Get the OS X version of the current system. Example: `10.9.3`
+- [win-release](https://github.com/sindresorhus/osx-version) - Get the name of a Windows version from the release number: `5.1.2600` → `XP`
 
 
 ## License
