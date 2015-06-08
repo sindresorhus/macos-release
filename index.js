@@ -2,6 +2,7 @@
 var os = require('os');
 
 var nameMap = {
+	'15': 'El Capitan',
 	'14': 'Yosemite',
 	'13': 'Mavericks',
 	'12': 'Mountain Lion',
