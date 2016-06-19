@@ -1,7 +1,7 @@
 {
   "name": "osx-release",
   "version": "1.1.0",
-  "description": "Get the name and version of a OS X release from the Darwin version. Example: 13.2.0 → {name: 'Mavericks', version: '10.9'}",
+  "description": "Get the name and version of a macOS release from the Darwin version",
   "license": "MIT",
   "repository": "sindresorhus/osx-release",
   "author": {
@@ -9,21 +9,16 @@
     "email": "sindresorhus@gmail.com",
     "url": "sindresorhus.com"
   },
-  "bin": "cli.js",
   "engines": {
     "node": ">=0.10.0"
   },
   "scripts": {
-    "test": "mocha"
+    "test": "xo && ava"
   },
   "files": [
-    "index.js",
-    "cli.js"
+    "index.js"
   ],
   "keywords": [
-    "cli-app",
-    "cli",
-    "bin",
     "os",
     "osx",
     "darwin",
@@ -35,10 +30,8 @@
     "release",
     "version"
   ],
-  "dependencies": {
-    "minimist": "^1.1.0"
-  },
   "devDependencies": {
-    "mocha": "*"
+    "ava": "*",
+    "xo": "*"
   }
 }

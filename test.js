@@ -1,7 +1,9 @@
-'use strict';
-var assert = require('assert');
-var osxRelease = require('./');
+import test from 'ava';
+import m from './';
 
-it('should return the name and version of a OS X release', function () {
-	assert.deepEqual(osxRelease('13.2.0'), {name: 'Mavericks', version: '10.9'});
+test(t => {
+	t.deepEqual(m('13.2.0'), {
+		name: 'Mavericks',
+		version: '10.9'
+	});
 });
