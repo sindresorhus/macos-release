@@ -1,42 +1,42 @@
-# osx-release [![Build Status](https://travis-ci.org/sindresorhus/osx-release.svg?branch=master)](https://travis-ci.org/sindresorhus/osx-release)
+# macos-release [![Build Status](https://travis-ci.org/sindresorhus/macos-release.svg?branch=master)](https://travis-ci.org/sindresorhus/macos-release)
 
-> Get the name and version of a OS X release from the Darwin version.<br>
+> Get the name and version of a macOS release from the Darwin version<br>
 > Example: `13.2.0` → `{name: 'Mavericks', version: '10.9'}`
 
 
 ## Install
 
-```sh
-$ npm install --save osx-release
+```
+$ npm install --save macos-release
 ```
 
 
 ## Usage
 
 ```js
-var os = require('os');
-var osxRelease = require('osx-release');
+const os = require('os');
+const macosRelease = require('macos-release');
 
-// on an OS X Mavericks system
+// on a macOS Sierra system
 
-osxRelease();
-//=> {name: 'Mavericks', version: '10.9'}
+macosRelease();
+//=> {name: 'Sierra', version: '10.12'}
 
 os.release();
 //=> 13.2.0
 // this is the Darwin kernel version
 
-osxRelease(os.release());
-//=> {name: 'Mavericks', version: '10.9'}
+macosRelease(os.release());
+//=> {name: 'Sierra', version: '10.12'}
 
-osxRelease('14.0.0');
+macosRelease('14.0.0');
 //=> {name: 'Yosemite', version: '10.10'}
 ```
 
 
 ## API
 
-### osxRelease([release])
+### macosRelease([release])
 
 #### release
 
@@ -49,7 +49,7 @@ By default the current operating system is used, but you can supply a custom [Da
 
 - [os-name](https://github.com/sindresorhus/os-name) - Get the name of the current operating system. Example: `macOS Sierra`
 - [macos-version](https://github.com/sindresorhus/macos-version) - Get the macOS version of the current system. Example: `10.9.3`
-- [win-release](https://github.com/sindresorhus/osx-version) - Get the name of a Windows version from the release number: `5.1.2600` → `XP`
+- [win-release](https://github.com/sindresorhus/win-release) - Get the name of a Windows version from the release number: `5.1.2600` → `XP`
 
 
 ## License
