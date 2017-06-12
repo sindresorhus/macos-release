@@ -7,7 +7,7 @@
 ## Install
 
 ```
-$ npm install --save macos-release
+$ npm install macos-release
 ```
 
 
@@ -17,14 +17,14 @@ $ npm install --save macos-release
 const os = require('os');
 const macosRelease = require('macos-release');
 
-// on a macOS Sierra system
+// On a macOS Sierra system
 
 macosRelease();
 //=> {name: 'Sierra', version: '10.12'}
 
 os.release();
 //=> 13.2.0
-// this is the Darwin kernel version
+// This is the Darwin kernel version
 
 macosRelease(os.release());
 //=> {name: 'Sierra', version: '10.12'}

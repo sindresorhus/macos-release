@@ -1,7 +1,7 @@
 'use strict';
-var os = require('os');
+const os = require('os');
 
-var nameMap = {
+const nameMap = {
 	17: 'High Sierra',
 	16: 'Sierra',
 	15: 'El Capitan',
@@ -17,7 +17,7 @@ var nameMap = {
 	5: 'Puma'
 };
 
-module.exports = function (release) {
+module.exports = release => {
 	release = (release || os.release()).split('.')[0];
 	return {
 		name: nameMap[release],
