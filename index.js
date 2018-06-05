@@ -2,6 +2,7 @@
 const os = require('os');
 
 const nameMap = {
+	18: 'Mojave',
 	17: 'High Sierra',
 	16: 'Sierra',
 	15: 'El Capitan',
