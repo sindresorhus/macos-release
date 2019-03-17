@@ -1,8 +1,8 @@
 import test from 'ava';
-import m from '.';
+import macosRelease from '.';
 
-test(t => {
-	t.deepEqual(m('13.2.0'), {
+test('main', t => {
+	t.deepEqual(macosRelease('13.2.0'), {
 		name: 'Mavericks',
 		version: '10.9'
 	});

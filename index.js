@@ -18,10 +18,13 @@ const nameMap = new Map([
 	[5, 'Puma']
 ]);
 
-module.exports = release => {
+const macosRelease = release => {
 	release = Number((release || os.release()).split('.')[0]);
 	return {
 		name: nameMap.get(release),
 		version: '10.' + (release - 4)
 	};
 };
+
+module.exports = macosRelease;
+module.exports.default = macosRelease;
