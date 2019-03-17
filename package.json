@@ -20,9 +20,8 @@
 		"index.d.ts"
 	],
 	"keywords": [
-		"os",
 		"macos",
-		"osx",
+		"os",
 		"darwin",
 		"operating",
 		"system",
