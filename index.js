@@ -27,4 +27,5 @@ const macosRelease = release => {
 };
 
 module.exports = macosRelease;
+// TODO: remove this in the next major version
 module.exports.default = macosRelease;
