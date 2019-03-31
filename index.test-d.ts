@@ -1,5 +1,5 @@
-import {expectType} from 'tsd-check';
-import macosRelease from '.';
+import {expectType} from 'tsd';
+import macosRelease = require('.');
 
 expectType<string>(macosRelease());
 expectType<string>(macosRelease('foo'));
