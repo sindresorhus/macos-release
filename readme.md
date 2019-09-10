@@ -36,7 +36,7 @@ macosRelease('14.0.0');
 
 ## API
 
-### macosRelease([release])
+### macosRelease(release?)
 
 #### release
 
@@ -52,6 +52,14 @@ By default, the current operating system is used, but you can supply a custom [D
 - [win-release](https://github.com/sindresorhus/win-release) - Get the name of a Windows version from the release number: `5.1.2600` → `XP`
 
 
-## License
+---
 
-MIT © [Sindre Sorhus](https://sindresorhus.com)
+<div align="center">
+	<b>
+		<a href="https://tidelift.com/subscription/pkg/npm-macos-release?utm_source=npm-macos-release&utm_medium=referral&utm_campaign=readme">Get professional support for this package with a Tidelift subscription</a>
+	</b>
+	<br>
+	<sub>
+		Tidelift helps make open source sustainable for maintainers while giving companies<br>assurances about security, maintenance, and licensing for their dependencies.
+	</sub>
+</div>
