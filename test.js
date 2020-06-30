@@ -6,4 +6,9 @@ test('main', t => {
 		name: 'Mavericks',
 		version: '10.9'
 	});
+
+	t.deepEqual(macosRelease('20.0.0'), {
+		name: 'Big Sur',
+		version: '11'
+	});
 });
