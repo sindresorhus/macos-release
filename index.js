@@ -1,5 +1,4 @@
-'use strict';
-const os = require('os');
+import os from 'node:os';
 
 const nameMap = new Map([
 	[21, ['Monterey', '12']],
@@ -18,20 +17,19 @@ const nameMap = new Map([
 	[8, ['Tiger', '10.4']],
 	[7, ['Panther', '10.3']],
 	[6, ['Jaguar', '10.2']],
-	[5, ['Puma', '10.1']]
+	[5, ['Puma', '10.1']],
 ]);
 
-const macosRelease = release => {
+export default function macosRelease(release) {
 	release = Number((release || os.release()).split('.')[0]);
 
-	const [name, version] = nameMap.get(release);
+	const [name, version] = nameMap.get(release) || {
+		name: 'Unknown',
+		version: '',
+	};
 
 	return {
 		name,
-		version
+		version,
 	};
-};
-
-module.exports = macosRelease;
-// TODO: remove this in the next major version
-module.exports.default = macosRelease;
+}

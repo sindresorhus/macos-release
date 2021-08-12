@@ -12,8 +12,8 @@ $ npm install macos-release
 ## Usage
 
 ```js
-const os = require('os');
-const macosRelease = require('macos-release');
+import os from 'node:os';
+import macosRelease from 'macos-release';
 
 // On a macOS Sierra system
 
