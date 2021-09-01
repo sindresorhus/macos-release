@@ -12,3 +12,10 @@ test('main', t => {
 		version: '11',
 	});
 });
+
+test('unknown version', t => {
+	t.deepEqual(macosRelease('4.0.0'), {
+		name: 'Unknown',
+		version: '',
+	});
+});

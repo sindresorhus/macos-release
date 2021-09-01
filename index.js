@@ -23,10 +23,7 @@ const nameMap = new Map([
 export default function macosRelease(release) {
 	release = Number((release || os.release()).split('.')[0]);
 
-	const [name, version] = nameMap.get(release) || {
-		name: 'Unknown',
-		version: '',
-	};
+	const [name, version] = nameMap.get(release) || ['Unknown', ''];
 
 	return {
 		name,
