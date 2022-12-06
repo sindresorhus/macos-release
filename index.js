@@ -23,8 +23,11 @@ const nameMap = new Map([
 
 export default function macosRelease(release) {
 	release = Number((release || os.release()).split('.')[0]);
-
-	const [name, version] = nameMap.get(release) || ['Unknown', ''];
+	const osVersion = nameMap.get(release);
+	if(osVersion === undefined){
+		console.warn(`We can't find your os verison in library config, maybe you should upgrade macos-release. Your macOS version is ${release}`)
+	}
+	const [name, version] = osVersion || ['Unknown', ''];
 
 	return {
 		name,
