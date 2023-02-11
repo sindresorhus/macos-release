@@ -2,6 +2,7 @@
 const os = require('os');
 
 const nameMap = new Map([
+	[22, ['Ventura', '13']],
 	[21, ['Monterey', '12']],
 	[20, ['Big Sur', '11']],
 	[19, ['Catalina', '10.15']],
@@ -24,7 +25,7 @@ const nameMap = new Map([
 const macosRelease = release => {
 	release = Number((release || os.release()).split('.')[0]);
 
-	const [name, version] = nameMap.get(release);
+	const [name, version] = nameMap.get(release) || ['Unknown', ''];
 
 	return {
 		name,
