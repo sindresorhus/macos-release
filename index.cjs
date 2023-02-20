@@ -1,4 +1,4 @@
-import os from 'node:os';
+const os = require('os');
 
 const nameMap = new Map([
 	[22, ['Ventura', '13']],
@@ -21,7 +21,7 @@ const nameMap = new Map([
 	[5, ['Puma', '10.1']],
 ]);
 
-export default function macosRelease(release) {
+function macosRelease(release) {
 	release = Number((release || os.release()).split('.')[0]);
 
 	const [name, version] = nameMap.get(release) || ['Unknown', ''];
@@ -31,3 +31,5 @@ export default function macosRelease(release) {
 		version,
 	};
 }
+
+module.exports = macosRelease;
