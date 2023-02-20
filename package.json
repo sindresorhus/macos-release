@@ -12,6 +12,7 @@
 	},
 	"type": "module",
 	"exports": "./index.js",
+	"main": "./index.cjs",
 	"engines": {
 		"node": "^12.20.0 || ^14.13.1 || >=16.0.0"
 	},
@@ -20,6 +21,7 @@
 	},
 	"files": [
 		"index.js",
+		"index.cjs",
 		"index.d.ts"
 	],
 	"keywords": [
