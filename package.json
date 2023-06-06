@@ -1,6 +1,6 @@
 {
 	"name": "macos-release",
-	"version": "3.1.0",
+	"version": "3.2.0",
 	"description": "Get the name and version of a macOS release from the Darwin version",
 	"license": "MIT",
 	"repository": "sindresorhus/macos-release",
