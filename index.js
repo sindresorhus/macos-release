@@ -1,7 +1,7 @@
 import os from 'node:os';
 
 const nameMap = new Map([
-	[26, ['Golden Gate', '27']],
+	[27, ['Golden Gate', '27']],
 	[25, ['Tahoe', '26']],
 	[24, ['Sequoia', '15']],
 	[23, ['Sonoma', '14']],
